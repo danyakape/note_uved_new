@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:ignore="ExtraText">
+    <!-- используем цвета, указанные в colors.xml и можем даже их назвать-->
+
+    <EditText
+        android:id="@+id/name_folder"
+        android:width="50dp"
+        android:height="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rectangle_rounded_all"
+        android:hint="@string/foldername"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/text_body"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/name_folder"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rectangle_rounded_all"
+        android:ems="25"
+        android:gravity="fill"
+        android:hint="@string/textbody"
+        android:inputType="textMultiLine"
+        android:padding="15sp"
+        android:textColor="@color/white" />
+
+    <!--<TextView
+        android:id="@+id/show_noty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_body"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="30sp"
+        android:layout_marginEnd="30sp"
+        android:background="@drawable/rectangle_rounded_all"
+        android:hint="@string/noty"
+        android:padding="10sp"
+        android:textColor="@color/white" />-->
+
+    <TextView
+        android:id="@+id/spill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_body"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rectangle_rounded_all"
+        android:hint="@string/spill"
+        android:padding="10sp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/get"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spill"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rectangle_rounded_all"
+        android:hint="@string/get"
+        android:padding="10dp"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/apply_button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/get"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/rounded_button"
+        android:text="@string/apply" />
+
+    <!--<Button
+        android:id="@+id/choicebar_noty"
+        android:layout_width="43sp"
+        android:layout_height="43sp"
+        android:layout_below="@id/text_body"
+        android:layout_alignRight="@id/show_noty"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/circle"
+        android:text="@string/dots"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:backgroundTint="@null" />-->
+
+    <Button
+        android:id="@+id/choicebar_spill"
+        android:width="50dp"
+        android:height="50dp"
+        android:layout_width="119dp"
+        android:layout_height="38dp"
+        android:layout_below="@id/text_body"
+        android:layout_alignEnd="@id/spill"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="-1dp"
+        android:background="@drawable/circle"
+        android:text="@string/dots"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/choicebar_get"
+        android:layout_width="63dp"
+        android:layout_height="43dp"
+        android:layout_below="@id/spill"
+        android:layout_alignEnd="@id/get"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/circle"
+        android:text="@string/dots"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:backgroundTint="@null" />
+
+    <ImageButton
+        android:id="@+id/returnback"
+        android:layout_width="54dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/get"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@null"
+        android:src="@drawable/icons8_arrow_24" />
+
+</RelativeLayout>
